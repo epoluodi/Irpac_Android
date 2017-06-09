@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/input_more"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+        <include layout="@layout/share_item_view"
+            android:id="@+id/item_wxfriend"/>
+        <include layout="@layout/share_item_view"
+            android:id="@+id/item_wxgroup"/>
+        <include layout="@layout/share_item_view"
+            android:id="@+id/item_copy"/>
+        <include layout="@layout/share_item_view"
+            android:id="@+id/item_sendsms"/>
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_horizontal|center_vertical"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:visibility="gone"-->
+        <!--android:paddingTop="10dp">-->
+        <!--<include layout="@layout/input_item_view"-->
+            <!--android:id="@+id/item_Sign"/>-->
+        <!--<include layout="@layout/input_item_view"-->
+            <!--android:id="@+id/item_sendgps"/>-->
+        <!--<include layout="@layout/input_item_view"-->
+            <!--android:id="@+id/item_mpty1" />-->
+        <!--<include layout="@layout/input_item_view"-->
+            <!--android:id="@+id/item_mpty2"/>-->
+    <!--</LinearLayout>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/blackTransparent2"/>
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:alpha="0.95"
+        android:background="@drawable/btn_cancel_selector"
+        android:text="取消" />
+</LinearLayout>

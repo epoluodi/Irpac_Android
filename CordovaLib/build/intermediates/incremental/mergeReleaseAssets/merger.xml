@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/Stereo/项目/Irpac_Android/CordovaLib/assets"/><source path="/Users/Stereo/项目/Irpac_Android/CordovaLib/build/generated/assets/shaders/release"/></dataSet><dataSet config="release"><source path="/Users/Stereo/项目/Irpac_Android/CordovaLib/src/release/assets"/></dataSet></merger>

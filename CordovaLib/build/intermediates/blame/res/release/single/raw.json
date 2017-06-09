@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/Stereo/项目/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/raw/beep.ogg",
+        "source": "/Users/Stereo/项目/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/raw/beep.ogg"
+    },
+    {
+        "merged": "/Users/Stereo/项目/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/raw/client.p12",
+        "source": "/Users/Stereo/项目/Irpac_Android/CordovaLib/res/raw/client.p12"
+    },
+    {
+        "merged": "/Users/Stereo/项目/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/raw/sound700.mp3",
+        "source": "/Users/Stereo/项目/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/raw/sound700.mp3"
+    },
+    {
+        "merged": "/Users/Stereo/项目/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/raw/server.cer",
+        "source": "/Users/Stereo/项目/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/raw/server.cer"
+    },
+    {
+        "merged": "/Users/Stereo/项目/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/raw/tejat.ogg",
+        "source": "/Users/Stereo/项目/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/raw/tejat.ogg"
+    }
+]

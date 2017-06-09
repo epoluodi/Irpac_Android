@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.suypower.stereo" version="0.0.1">
+    <!--<preference name="loglevel" value="DEBUG" />-->
+    <!--<feature name="Device">-->
+        <!--<param name="android-package" value="org.apache.cordova.device.Device" />-->
+    <!--</feature>-->
+    <feature name="SystemRequest">
+        <param name="android-package" value="com.suypower.stereo.Irpac.CordovaPlugin.system.SystemRequest" />
+    </feature>
+    <feature name="FavoriteRequest">
+        <param name="android-package" value="com.suypower.stereo.Irpac.CordovaPlugin.Http.FavoriteRequest" />
+    </feature>
+    <feature name="WebViewRequest">
+        <param name="android-package" value="com.suypower.stereo.Irpac.CordovaPlugin.webview.WebViewRequest" />
+    </feature>
+    <feature name="CameraRequest">
+        <param name="android-package" value="com.suypower.stereo.Irpac.CordovaPlugin.camera.CameraRequest" />
+    </feature>
+    <feature name="FileRequest">
+        <param name="android-package" value="com.suypower.stereo.Irpac.CordovaPlugin.file.FileRequest" />
+    </feature>
+    <feature name="AjaxRequest">
+        <param name="android-package" value="com.suypower.stereo.Irpac.CordovaPlugin.ajax.AjaxRequest" />
+    </feature>
+    <feature name="CommentsRequest">
+        <param name="android-package" value="com.suypower.stereo.Irpac.CordovaPlugin.Comments.CommentsRequest" />
+    </feature>
+    <feature name="ScanRequest">
+        <param name="android-package" value="com.suypower.stereo.Irpac.CordovaPlugin.scan.ScanRequest" />
+    </feature>
+    <feature name="ImagePreviewPlugin">
+        <param name="android-package" value="com.suypower.stereo.Irpac.CordovaPlugin.webview.ImagePreviewPlugin" />
+    </feature>
+    <feature name="PhoneBookPlugin">
+        <param name="android-package" value="com.suypower.stereo.Irpac.CordovaPlugin.PhoneBook.PhoneBookPlugin" />
+    </feature>
+    <feature name="SharePlugin">
+        <param name="android-package" value="com.suypower.stereo.Irpac.CordovaPlugin.share.SharePlugin" />
+    </feature>
+    <feature name="PreviewPlugin">
+        <param name="android-package" value="com.suypower.stereo.Irpac.CordovaPlugin.preview.PreviewPlugin" />
+    </feature>
+    <name>stereo</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>

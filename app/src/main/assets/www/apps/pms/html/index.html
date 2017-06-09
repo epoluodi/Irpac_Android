@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <title>首页</title>
+    <style type="text/css">
+
+        .long_button{
+        display:block;
+        border: 1px solid;
+        font-weight: 700;
+        margin: 5px;
+        height: 33px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: 0.5em;
+        color: #fff;
+        background-color: #0a7e81;
+        }
+
+
+    </style>
+</head>
+<body>
+<!-- header 个人信息 开始 -->
+<div class="user-center">
+    <!-- 头像 开始 -->
+    <div class="photo">
+        <img src="../img/photo.jpg">
+    </div>
+    <!-- 头像 结束 -->
+    <!-- 个人摘要 开始 -->
+    <div class="user-summary">
+        <a href="projectView.html" target="_blank">123</a>
+        <ul>
+            <li>张三疯</li>
+            <li>软件三部</li>
+            <li>江苏苏源高科技有限公司</li>
+        </ul>
+    </div>
+    <!-- 个人摘要 结束 -->
+
+</div>
+<!-- header 个人信息 结束 -->
+<a class="long_button" onclick="click3()">设置标题</a>
+<a class="long_button" onclick="click1()">隐藏状态栏</a>
+<a class="long_button" onclick="click2()">打开状态栏</a>
+<a class="long_button" onclick="click4()">禁止下拉刷新</a>
+<a class="long_button" onclick="click5()">启用下拉刷新</a>
+<a class="long_button" onclick="click6()">新窗口</a>
+<a class="long_button" onclick="click7()">获取账号信息</a>
+<a class="long_button" onclick="click8()">打开相册和相机</a>
+<a class="long_button" onclick="click9()">多文件上传</a>
+<a class="long_button" onclick="click10()">关闭窗口</a>
+<a class="long_button" onclick="click11()">Toast</a>
+<a class="long_button" onclick="click12()">Post</a>
+<a class="long_button" onclick="click13()">设置右边按钮</a>
+<a class="long_button" onclick="click14()">关闭右边按钮</a>
+<a class="long_button" onclick="click15()">设置右边列表单按钮</a>
+<a class="long_button" onclick="click16()">新建窗口2</a>
+<a class="long_button" onclick="click17()">增加评论栏</a>
+<a class="long_button" onclick="click18()">关闭评论栏</a>
+<a class="long_button" onclick="click20()">添加关闭注册事件</a>
+<a class="long_button" onclick="click21()">选择联系人</a>
+<a class="long_button" onclick="click22()">分享</a>
+<a class="long_button" onclick="click23()">预览web图片</a>
+<a class="long_button" href="stereo://prefile/ea705893-53d2-11e6-9b9a-0025118f5e64">显示个人详细信息</a>
+
+<a class="long_button" onclick="click19()">扫描</a>
+
+
+
+<!--&lt;!&ndash; 功能列表 开始 &ndash;&gt;-->
+<!--<div class="">-->
+
+<!--<div class="content_wapper">-->
+<!--<div class="borad">-->
+<!--<div class="cell" onclick="click1()">-->
+<!--<span></span>-->
+<!--<div>-->
+<!--<img src="../img/spgl.png">-->
+
+<!--<p>状态栏</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="cell" onclick="click2()">-->
+<!--<span></span>-->
+
+<!--<div>-->
+<!--<img src="../img/txl.png">-->
+
+<!--<p>web刷新</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="cell" data-rel="projectView.html">-->
+<!--<span></span>-->
+<!--<div>-->
+<!--<img src="../img/xmst.png">-->
+<!--<p>项目视图</p>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--<div class="borad">-->
+
+<!--<div class="cell" id="xqxy" onclick="toPage(this);">-->
+<!--<span></span>-->
+
+<!--<div>-->
+<!--<img src="../img/yszkcx.png">-->
+
+<!--<p>应收账款查询</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="cell" id="base_info" onclick="toPage(this);">-->
+<!--<span></span>-->
+
+<!--<div>-->
+<!--<img src="../img/dzcx.png">-->
+
+<!--<p>到款查询</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="cell" id="nxxx" onclick="toPage(this);">-->
+<!--<span></span>-->
+
+<!--<div>-->
+<!--<img src="../img/kpcx.png">-->
+
+<!--<p>开票查询</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="borad">-->
+
+<!--<div class="cell" id="nxjs" onclick="toPage(this);">-->
+<!--<span></span>-->
+
+<!--<div>-->
+<!--<img src="../img/htcx.png">-->
+
+<!--<p>合同查询</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="cell" id="zcfg" onclick="toPage(this);">-->
+<!--<span></span>-->
+
+<!--<div>-->
+<!--<img src="../img/skjh.png">-->
+
+<!--<p>收款计划查询</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="cell" id="weather" onclick="toPage(this);">-->
+<!--<span></span>-->
+
+<!--<div>-->
+<!--<img src="../img/bxcx.png">-->
+
+<!--<p>报销查询</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+
+<!--</div>-->
+
+</div>
+<!-- 功能列表 结束 -->
+</body>
+
+
+<script src="../cordova.js" type="text/javascript"></script>
+<script src="../js/jquery-2.1.1.js" type="text/javascript"></script>
+<script>
+    document.addEventListener("deviceready",onDeviceReady,false);
+    function onDeviceReady(){
+
+
+
+        $('.content_wapper .cell').click(function(){
+//            var url = $(this).attr('data-rel');
+            var url = $(this).data('rel');
+//            alert(url);
+            switch (url)
+            {
+                case "projectView.html":
+                    window.location.href=$(this).data('rel');
+                    break;
+            }
+
+        });
+
+    }
+
+    function click1(){
+        stereo.system.navbar({"hide":"true"});
+    }
+
+    function click2(){
+        stereo.system.navbar({"hide":"false"});
+    }
+
+    function click3(){
+       // stereo.system.title({"title":"测试显示标题"});
+        alert("enter deleteFavorite");
+      //  StereoBridge.deleteFavorite("111","deleteFavoritecallback");
+      try
+      {
+           stereo.FavoriteRequest.deleteFavorite({"favId":"2324"},deleteFavoritecallback,failCallback);
+      }
+      catch(e)
+      {
+         alert(e.message)
+      }
+
+    }
+   function deleteFavoritecallback(data)
+    {
+      alert(JSON.stringify(data));
+    }
+    function failCallback(data)
+    {
+      alert(JSON.stringify(data));
+    }
+
+    function click4(){
+        stereo.system.webrefresh({"enable":"false"});
+    }
+    function click5(){
+        stereo.system.webrefresh({"enable":"true"});
+    }
+
+    function click6(){
+        stereo.webview.open({"url":"file:///android_asset/www/apps/pms/html/index.html","title":"测测测测"});
+    }
+
+ function click16(){
+
+
+
+
+        stereo.webview.open({
+
+            "url":"file:///android_asset/www/apps/pms/html/index.html",
+            "mode":"NOTITLE",
+            "title":"测测测测"
+
+
+
+        });
+    }
+    function click7(){
+        stereo.system.getLoginUser(userinfo);
+    }
+    function userinfo(json){
+
+      alert(JSON.stringify(json));
+
+    }
+
+    function click8(){
+        stereo.camera.chooseImage(
+        {
+               "chooseModel" : "all",
+               "imageCount" : "10"
+             }
+             ,CameraResult,null);
+    }
+
+
+    function click9(){
+        stereo.file.upload(
+
+             [
+              "af527f42aaa64c6097d98513c7e16b5d","8f55d25f767142daa96ddbeb18548fae",
+               "9fb4d53224994ce09503296a89d24142","75a17b6bd20440a9a8cca4289c1ad961",
+               "9297707a7f7b495980e4322bb4ed7c06","8db25e38f8f14f1c8c3f92e9c05dd51c"
+             ]
+             ,sucessfun,errfun);
+    }
+   function click10(){
+        stereo.webview.close("closecallback");
+    }
+
+ function closecallback(){
+        alert("关闭回调");
+    }
+
+
+   function click11(){
+        stereo.system.toast("这个是一个测试");
+    }
+   function click12(){
+
+        stereo.ajax.post(
+            {
+                "url":"app/person/get",
+                "dataType":"json"
+            },ajaxsuccess,null
+        );
+    }
+  function click13(){
+
+        stereo.webview.setBarRight(
+            {
+              "function" : "alerttest",
+              "hide" : "NO",
+              "mode" : "button",
+              "type" : "add"
+            }
+        );
+    }
+
+    function alerttest()
+    {
+        alert("点击了右上角的button了吧，哈哈哈");
+    }
+
+
+  function click14(){
+
+        stereo.webview.setBarRight(
+            {
+              "hide" : "YES"
+            }
+        );
+    }
+
+  function click15(){
+
+        stereo.webview.setBarRight(
+            {
+              "function" : ["menu1","menu2"],// 回调JS方法
+              "hide" : "NO",//隐藏开关，yes 显示按钮，no 隐藏按钮
+              "mode" : "list",//list 为菜单模式
+              "type" : "more" ,
+              "menu":
+              [
+                  {
+                    "name":"添加",//菜单名称
+                    "icon":"add" //菜单图标url地址
+                  },
+                  {
+                    "name":"发布",
+                    "icon":"edit"
+                  }
+              ]
+            }
+        );
+    }
+
+        function ajaxsuccess(data)
+        {
+                str = JSON.stringify(data);
+                alert(str);
+
+
+        }
+    function CameraResult(data){
+        photoJson = JSON.stringify(data);
+        alert(photoJson);
+
+    }
+    function sucessfun(data){
+        photoJson = JSON.stringify(data);
+        alert(photoJson);
+
+    }
+   function errfun(data){
+
+        alert(data);
+
+    }
+
+
+  function click17(){
+
+        //更新 stereo.comments.updateState
+
+        stereo.comments.init(
+        {
+            data: {
+                showComment: 1, //1：允许评论 2：不允许评论
+                showCommentsNum:1,// 1 显示评论数，2不显示评论数
+                num:10 ,// 当评论数显示时 ，这个就必须存在，显示评论总数
+                numFunction:"callbackcommentsnum", //回调点击评论数的时候
+                showLike: 1,    //1：显示点赞 2：隐藏点赞
+                isLike: 1,  	//1: 点赞 2：未点赞
+                isFav: 1    	//1：收藏 2：未收藏
+            },
+	        callback: "callbackcomments"
+        }
+        );
+    }
+  function click18(){
+
+        stereo.comments.unInit();
+    }
+
+
+
+    //回调
+    function callbackcomments(json)
+    {
+        alert(JSON.stringify(json));
+    }
+
+
+
+    function click19(){
+
+        stereo.scan.create(scanresult);
+    }
+
+
+    function scanresult(barcode)
+    {
+        alert(barcode)
+    }
+
+
+  function click20(){
+
+        stereo.webview.closeEvent(
+        {
+            eventType:"add",
+	        function:"returnevent",
+	        arg:{
+            eventType:"add",
+	        function:"returnevent",
+	        arg:"c8fc0226-1f78-4de6-9af9-64439c1b7c5e"
+            }
+        }
+        );
+    }
+
+
+   function returnevent(json)
+   {
+        alert(JSON. stringify(json));
+   }
+
+
+  function click21(){
+
+        stereo.phonebook.open(return21);
+    }
+
+   function return21(json)
+   {
+        alert(json);
+   }
+    function click22(){
+
+        stereo.share.share({
+                           url:"http://m.taobao.com",
+                           title:"测试",
+                           desc:"这个是一个测试",
+                           thum:"null",
+                           }
+                           );
+    }
+
+    function click23(){
+
+    stereo.preview.webPreview({
+                              urls:"http://www.iconcool.cn/d/file/2016-08-12/b5bd718879e7eb9bdc95f7f63b7d9e2f.png,http://www.iconcool.cn/d/file/2016-08-07/087eb056f0d222b437d820f07696b0b8.png,http://www.iconcool.cn/d/file/2016-07-13/04f8d77301788f96f46c5f39c2df125b.png",
+                              index:"1",
+
+                              });
+}
+
+</script>
+</html>

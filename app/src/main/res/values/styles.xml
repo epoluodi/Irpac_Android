@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/orangered</item>
+        <item name="colorPrimaryDark">@color/orangered</item>
+        <item name="colorAccent">@color/orangered</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/BaseAppTheme"/>
+
+    <!-- listview 样式 -->
+    <style name="List" parent="android:Widget.ListView">
+        <item name="android:scrollbars">none</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:divider">@color/darkgrey</item>
+        <item name="android:dividerHeight">1px</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:choiceMode">singleChoice</item>
+    </style>
+    <style name="List2" parent="android:Widget.ListView">
+        <item name="android:scrollbars">none</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:divider">@color/darkgrey</item>
+        <item name="android:dividerHeight">1px</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:choiceMode">singleChoice</item>
+    </style>
+    <style name="Listdetail" parent="android:Widget.ListView">
+        <item name="android:scrollbars">none</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:divider">@color/transparent</item>
+        <item name="android:dividerHeight">0.0px</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:choiceMode">singleChoice</item>
+    </style>
+    <style name="chatList" parent="android:Widget.ListView">
+        <item name="android:scrollbars">none</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:divider">@color/transparent</item>
+        <item name="android:dividerHeight">1px</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:choiceMode">singleChoice</item>
+    </style>
+
+
+</resources>

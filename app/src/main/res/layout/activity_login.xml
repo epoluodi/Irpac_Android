@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    android:id="@+id/backview"
+    tools:context="com.suypower.stereo.Irpac.Activity.LoginActivity">
+
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/headview"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/orangered">
+
+        <ImageView
+            android:id="@+id/btnreturn"
+            android:layout_width="50dp"
+            android:layout_height="26dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/bar_return_bottom"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_bar_left_selector"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/bar_title_bottom"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+
+    <com.suypower.stereo.suypowerview.CustomView.STImageView
+        android:id="@+id/nickimg"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/headview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop"
+
+        android:src="@mipmap/appico2" />
+
+
+    <FrameLayout
+
+        android:id="@+id/fusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nickimg"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/editusernma"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/editbackimg"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="用户名/手机号"
+            android:lines="1"
+            android:maxLength="18"
+            android:imeOptions="actionNone"
+            android:inputType="textPersonName"
+
+            android:textColor="@color/gray"
+            android:textColorHint="@color/blackTransparent4"
+            android:textSize="16dp" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/t1"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:text="手机号:"-->
+        <!--android:textAlignment="textEnd"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="16dp" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/btnclear1"-->
+            <!--android:layout_width="15dp"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:layout_gravity="center_vertical|right"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:background="@drawable/bar_input_clear_selector3"-->
+
+            <!--android:clickable="true" />-->
+    </FrameLayout>
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/serverCfg"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/fpwd"-->
+    <!--android:layout_marginTop="10dp">-->
+    <!---->
+    <!--<EditText-->
+    <!--android:id="@+id/serverHost"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:background="@drawable/editbackimg"-->
+    <!--android:hint=""-->
+    <!--android:inputType="text"-->
+    <!--android:lines="1"-->
+    <!--android:text="http://suehome.suypower.com/Cloudx"-->
+    <!--android:maxLength="128"-->
+    <!--android:paddingLeft="100dp"-->
+    <!--android:textColor="@color/gray"-->
+    <!--android:textSize="14dp" />-->
+    <!--<TextView-->
+    <!--android:id="@+id/serverCfgLabel"-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:text="服务器:"-->
+    <!--android:textAlignment="textEnd"-->
+    <!--android:textColor="@color/black"-->
+    <!--android:textSize="16dp" />-->
+    <!--</FrameLayout>-->
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/fpwd"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button_style_login"
+        android:clickable="true"
+        android:text="登  录"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <FrameLayout
+        android:id="@+id/fpwd"
+        android:layout_marginTop="1px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fusername"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/edituserpwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/editbackimg"
+            android:hint="密码"
+            android:textColorHint="@color/blackTransparent4"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLength="11"
+            android:textAlignment="center"
+
+            android:textColor="@color/gray"
+            android:textSize="16dp" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/t2"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:text="密码:"-->
+        <!--android:textAlignment="textEnd"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="16dp" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/btnclear2"-->
+            <!--android:layout_width="15dp"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:layout_gravity="center_vertical|right"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:background="@drawable/bar_input_clear_selector3"-->
+            <!--android:clickable="true" />-->
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="南京横渡医疗技术有限公司 技术支持"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:textSize="12dp"
+        />
+
+
+</RelativeLayout>

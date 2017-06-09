@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/userinfo_menu_selector"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="60dp">
+
+
+
+    <com.suypower.stereo.suypowerview.CustomView.STImageView
+        android:id="@+id/msgimg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/default_user" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/msgimg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:maxWidth="200dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:lines="1"
+            android:maxLines="1"
+            android:ellipsize="end"
+
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/subcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/nickview"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxWidth="250dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/blackTransparent8"
+            android:textSize="14dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="04月05日"
+        android:textColor="@color/blackTransparentA"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignTop="@+id/dt"
+        android:layout_alignBottom="@+id/dt"
+        android:layout_toLeftOf="@+id/dt"
+        android:background="@mipmap/m3"
+        android:id="@+id/disturbstate"
+        />
+
+    <TextView
+        android:id="@+id/txtmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/dt"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:background="@drawable/main_tabbar_mark2"
+        android:minHeight="18dp"
+        android:minWidth="18dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="10dp" />
+
+
+</RelativeLayout>

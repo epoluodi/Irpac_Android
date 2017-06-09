@@ -1,0 +1,34 @@
+<resources>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置未浮动窗口 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置无边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 设置完全透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 是否模糊 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+    </style>
+
+
+
+    <!--popwindows动画样式-->
+    <style name="Animationpopwindows">
+        <item name="android:windowEnterAnimation">@anim/anim_optionmenu</item>
+        <item name="android:windowExitAnimation">@anim/anim_optionmenu_exit</item>
+    </style>
+
+    <style name="AnimationMenu">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@anim/anim_shareview_exit2</item>
+    </style>
+
+    <style name="Animationbottomwindows">
+        <item name="android:windowEnterAnimation">@anim/anim_bottommenu_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_bottommenu_exit</item>
+    </style>
+</resources>
