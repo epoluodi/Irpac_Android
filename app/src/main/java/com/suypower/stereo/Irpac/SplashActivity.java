@@ -75,7 +75,7 @@ public class SplashActivity extends AppCompatActivity {
         // 图标
         addShortcutIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE,
                 Intent.ShortcutIconResource.fromContext(SplashActivity.this,
-                        R.mipmap.logo512));
+                        R.mipmap.appico));
 
         // 设置关联程序
         Intent launcherIntent = new Intent(Intent.ACTION_MAIN);

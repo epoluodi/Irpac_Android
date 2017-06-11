@@ -1,5 +1,17 @@
 [
     {
+        "merged": "/Volumes/文件/Android/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/yangxiaoguang/.android/build-cache/039cfc4ea6fba997ced6802efd1b489d4e6e7a8c/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Volumes/文件/Android/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/yangxiaoguang/.android/build-cache/039cfc4ea6fba997ced6802efd1b489d4e6e7a8c/output/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Volumes/文件/Android/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/yangxiaoguang/.android/build-cache/039cfc4ea6fba997ced6802efd1b489d4e6e7a8c/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
         "merged": "/Users/Stereo/项目/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable-v21/abc_action_bar_item_background_material.xml",
         "source": "/Users/Stereo/.android/build-cache/eb4f387910273cc6452a1ee92a49b0a062fba3ff/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
     },
