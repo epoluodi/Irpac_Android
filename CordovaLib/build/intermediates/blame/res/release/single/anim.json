@@ -4,12 +4,12 @@
         "source": "/Users/Stereo/.android/build-cache/eb4f387910273cc6452a1ee92a49b0a062fba3ff/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "/Users/Stereo/项目/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/anim/scale.xml",
-        "source": "/Users/Stereo/项目/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/anim/scale.xml"
-    },
-    {
         "merged": "/Volumes/文件/Android/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/anim/abc_slide_out_bottom.xml",
         "source": "/Users/yangxiaoguang/.android/build-cache/039cfc4ea6fba997ced6802efd1b489d4e6e7a8c/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/Stereo/项目/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/anim/scale.xml",
+        "source": "/Users/Stereo/项目/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/anim/scale.xml"
     },
     {
         "merged": "/Users/Stereo/项目/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/anim/comment_scale_1.xml",

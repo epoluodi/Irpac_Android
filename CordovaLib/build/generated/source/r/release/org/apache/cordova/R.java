@@ -2512,8 +2512,6 @@ containing a value of this type.
         public static int Widget_AppCompat_TextView_SpinnerItem=0x7f09013e;
         public static int Widget_AppCompat_Toolbar=0x7f09013f;
         public static int Widget_AppCompat_Toolbar_Button_Navigation=0x7f090140;
-        /**  半透明 
-         */
         public static int dialog=0x7f090141;
     }
     public static final class styleable {

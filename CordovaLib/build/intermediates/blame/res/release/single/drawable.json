@@ -20,12 +20,12 @@
         "source": "/Users/Stereo/项目/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/drawable/wxg2.png"
     },
     {
-        "merged": "/Users/Stereo/项目/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/wxgroup_btn_selector.xml",
-        "source": "/Users/Stereo/项目/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/drawable/wxgroup_btn_selector.xml"
-    },
-    {
         "merged": "/Volumes/文件/Android/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/v5.png",
         "source": "/Volumes/文件/Android/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/drawable/v5.png"
+    },
+    {
+        "merged": "/Users/Stereo/项目/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/wxgroup_btn_selector.xml",
+        "source": "/Users/Stereo/项目/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/drawable/wxgroup_btn_selector.xml"
     },
     {
         "merged": "/Volumes/文件/Android/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/abc_text_cursor_material.xml",
@@ -60,16 +60,16 @@
         "source": "/Volumes/文件/Android/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/drawable/logo60.png"
     },
     {
-        "merged": "/Volumes/文件/Android/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/popwindows_background.xml",
-        "source": "/Volumes/文件/Android/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/drawable/popwindows_background.xml"
+        "merged": "/Users/Stereo/项目/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/sms_btn_selector.xml",
+        "source": "/Users/Stereo/项目/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/drawable/sms_btn_selector.xml"
     },
     {
         "merged": "/Users/Stereo/项目/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/pl.png",
         "source": "/Users/Stereo/项目/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/drawable/pl.png"
     },
     {
-        "merged": "/Users/Stereo/项目/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/sms_btn_selector.xml",
-        "source": "/Users/Stereo/项目/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/drawable/sms_btn_selector.xml"
+        "merged": "/Volumes/文件/Android/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/popwindows_background.xml",
+        "source": "/Volumes/文件/Android/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/drawable/popwindows_background.xml"
     },
     {
         "merged": "/Users/Stereo/项目/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/comment_num_back.xml",
@@ -232,12 +232,12 @@
         "source": "/Volumes/文件/Android/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/drawable/msg_menu_button_selector.xml"
     },
     {
-        "merged": "/Users/Stereo/项目/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/copy.png",
-        "source": "/Users/Stereo/项目/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/drawable/copy.png"
-    },
-    {
         "merged": "/Volumes/文件/Android/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/alter_btn_background_pressed2.xml",
         "source": "/Volumes/文件/Android/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/drawable/alter_btn_background_pressed2.xml"
+    },
+    {
+        "merged": "/Users/Stereo/项目/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/copy.png",
+        "source": "/Users/Stereo/项目/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/drawable/copy.png"
     },
     {
         "merged": "/Volumes/文件/Android/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/input_vode.png",
@@ -264,12 +264,12 @@
         "source": "/Users/Stereo/.android/build-cache/eb4f387910273cc6452a1ee92a49b0a062fba3ff/output/res/drawable/abc_btn_check_material.xml"
     },
     {
-        "merged": "/Volumes/文件/Android/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/icon_fav2.png",
-        "source": "/Volumes/文件/Android/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/drawable/icon_fav2.png"
-    },
-    {
         "merged": "/Volumes/文件/Android/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/viewpager_mark_selected.xml",
         "source": "/Volumes/文件/Android/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/drawable/viewpager_mark_selected.xml"
+    },
+    {
+        "merged": "/Volumes/文件/Android/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/icon_fav2.png",
+        "source": "/Volumes/文件/Android/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/drawable/icon_fav2.png"
     },
     {
         "merged": "/Users/Stereo/项目/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/sms2.png",
@@ -316,12 +316,12 @@
         "source": "/Users/Stereo/项目/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/drawable/icon_return_selector.xml"
     },
     {
-        "merged": "/Volumes/文件/Android/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/bubble2.png",
-        "source": "/Volumes/文件/Android/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/drawable/bubble2.png"
-    },
-    {
         "merged": "/Volumes/文件/Android/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/icon_fav1.png",
         "source": "/Volumes/文件/Android/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/drawable/icon_fav1.png"
+    },
+    {
+        "merged": "/Volumes/文件/Android/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/bubble2.png",
+        "source": "/Volumes/文件/Android/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/drawable/bubble2.png"
     },
     {
         "merged": "/Users/Stereo/项目/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/alter_btn_background2.xml",
@@ -364,12 +364,12 @@
         "source": "/Volumes/文件/Android/Irpac_Android/SuypowerLib/build/intermediates/bundles/default/res/drawable/icon_return_selector.xml"
     },
     {
-        "merged": "/Volumes/文件/Android/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/abc_edit_text_material.xml",
-        "source": "/Users/yangxiaoguang/.android/build-cache/039cfc4ea6fba997ced6802efd1b489d4e6e7a8c/output/res/drawable/abc_edit_text_material.xml"
-    },
-    {
         "merged": "/Volumes/文件/Android/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/abc_item_background_holo_light.xml",
         "source": "/Users/yangxiaoguang/.android/build-cache/039cfc4ea6fba997ced6802efd1b489d4e6e7a8c/output/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/Volumes/文件/Android/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/abc_edit_text_material.xml",
+        "source": "/Users/yangxiaoguang/.android/build-cache/039cfc4ea6fba997ced6802efd1b489d4e6e7a8c/output/res/drawable/abc_edit_text_material.xml"
     },
     {
         "merged": "/Users/Stereo/项目/Irpac_Android/CordovaLib/build/intermediates/res/merged/release/drawable/v3.png",

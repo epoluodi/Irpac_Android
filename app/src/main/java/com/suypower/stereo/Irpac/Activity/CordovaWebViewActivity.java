@@ -128,9 +128,9 @@ public class CordovaWebViewActivity extends AppCompatActivity implements Cordova
         }
         IsRefresh = true;
 
-        cordovaWebView.clearHistory();
-        cordovaWebView.clearFormData();
-        cordovaWebView.clearCache(true);
+//        cordovaWebView.clearHistory();
+//        cordovaWebView.clearFormData();
+//        cordovaWebView.clearCache(true);
 
 
         cordovaWebView.loadUrl(HostUrl);
