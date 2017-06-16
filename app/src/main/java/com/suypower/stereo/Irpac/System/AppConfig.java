@@ -16,8 +16,8 @@ public class AppConfig {
 
 //    public static final String host = "http://192.168.0.77:8080/Cloudx";// DK
 
-    public static final String host = "http://192.168.0.33:8080/riskControl/app";// 开发 120.26.101.38:8081
-    public static String host2 = "http://192.168.0.33:8080/riskControl";// 正式
+    public static final String host = "http://120.26.101.38:8081/riskControl/app";// 开发 120.26.101.38:8081
+    public static String host2 = "http://120.26.101.38:8081/riskControl";// 正式
 
     //    public static final String host = getHostForSD();
     public static final String QRHhost = "";//二维码host
