@@ -136,7 +136,7 @@ public class HttpPhoneBook extends BaseTask {
         try {
             //登录成功后，需要启动消息轮询机制
             Looper.prepare();
-            loginurl = String.format("%1$saddrbook/org/query", AppConfig.IMUrl);
+            loginurl = String.format("%1$saddrbook/org/query", AppConfig.cHost);
             Log.i("url", "");
 
             m_httpClient.openRequest(loginurl, AjaxHttp.REQ_METHOD_POST);
@@ -203,7 +203,7 @@ public class HttpPhoneBook extends BaseTask {
         try {
             //登录成功后，需要启动消息轮询机制
             Looper.prepare();
-            loginurl = String.format("%1$saddrbook/dept/query", AppConfig.IMUrl);
+            loginurl = String.format("%1$saddrbook/dept/query", AppConfig.cHost);
             Log.i("url", "");
             m_httpClient.openRequest(loginurl, AjaxHttp.REQ_METHOD_POST);
             if (LibConfig.getKeyShareVarForint("deptver") != -1) {
@@ -268,7 +268,7 @@ public class HttpPhoneBook extends BaseTask {
         try {
             //登录成功后，需要启动消息轮询机制
             Looper.prepare();
-            loginurl = String.format("%1$saddrbook/user/query", AppConfig.IMUrl);
+            loginurl = String.format("%1$saddrbook/user/query", AppConfig.cHost);
             Log.i("url", "");
             m_httpClient.openRequest(loginurl, AjaxHttp.REQ_METHOD_POST);
             if (LibConfig.getKeyShareVarForint("userver") != -1) {

@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 
 import com.suypower.stereo.Irpac.System.APP;
+import com.suypower.stereo.Irpac.System.AppConfig;
 import com.suypower.stereo.Irpac.System.AppContextLauncher;
 import com.suypower.stereo.suypowerview.Base.LibConfig;
 import com.suypower.stereo.suypowerview.PopWindowInfo.CustomPopWindowPlugin;
@@ -27,6 +28,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         addShortcut("廉洁从医");
+        AppConfig.cHost = String.format("http://%1$s",LibConfig.getKeyShareVarForString("serverUrl"));
 //        imageView = (ImageView) findViewById(R.id.backimg);
 //
 //

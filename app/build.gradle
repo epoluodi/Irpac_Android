@@ -9,8 +9,8 @@ android {
         applicationId "com.suypower.stereo.Irpac"
         minSdkVersion 18
         targetSdkVersion 23
-        versionCode 53
-        versionName "1.0.3"
+        versionCode 8
+        versionName "1.0.0"
     }
     buildTypes {
         release {

@@ -47,7 +47,7 @@ public class APP extends Application {
             LibConfig.setKeyShareVar("username", "null");
             LibConfig.setKeyShareVar("userpwd", "null");
             LibConfig.setKeyShareVar("IsRun", true);
-
+            LibConfig.setKeyShareVar("serverUrl", "");
             LibConfig.setKeyShareVar("token", "");
 
         } else {

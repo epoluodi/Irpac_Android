@@ -413,7 +413,7 @@ public class CordovaWebViewActivity extends AppCompatActivity implements Cordova
         if (id.equals("onReceivedTitle")) {
 
             if (strwebtitle == null || strwebtitle.equals(""))
-                webtitle.setText(cordovaWebView.webTitle);
+                webtitle.setText("");
             return null;
         }
         if (id.equals("onPageStarted"))

@@ -225,7 +225,7 @@ public class HttpChat extends BaseTask {
         try {
             //登录成功后，需要启动消息轮询机制
             Looper.prepare();
-            loginurl = String.format("%1$sgroup/add", AppConfig.IMUrl);
+            loginurl = String.format("%1$sgroup/add", "");
             Log.i("url", "");
             m_httpClient.openRequest(loginurl, AjaxHttp.REQ_METHOD_POST);
             m_httpClient.setEntity(getPostData());
@@ -282,7 +282,7 @@ public class HttpChat extends BaseTask {
         try {
             //登录成功后，需要启动消息轮询机制
             Looper.prepare();
-            loginurl = String.format("%1$sgroup/query", AppConfig.IMUrl);
+            loginurl = String.format("%1$sgroup/query", "");
             Log.i("url", "");
             m_httpClient.openRequest(loginurl, AjaxHttp.REQ_METHOD_POST);
             Message message = handler.obtainMessage();
@@ -402,7 +402,7 @@ public class HttpChat extends BaseTask {
         try {
             //登录成功后，需要启动消息轮询机制
             Looper.prepare();
-            loginurl = String.format("%1$sgroup/update", AppConfig.IMUrl);
+            loginurl = String.format("%1$sgroup/update", "");
             Log.i("url", "");
             m_httpClient.openRequest(loginurl, AjaxHttp.REQ_METHOD_POST);
             m_httpClient.setEntity(getPostData());
@@ -457,7 +457,7 @@ public class HttpChat extends BaseTask {
         try {
             //登录成功后，需要启动消息轮询机制
             Looper.prepare();
-            loginurl = String.format("%1$sgroup/user/update", AppConfig.IMUrl);
+            loginurl = String.format("%1$sgroup/user/update", "");
             Log.i("url", "");
             m_httpClient.openRequest(loginurl, AjaxHttp.REQ_METHOD_POST);
             m_httpClient.setEntity(getPostData());
@@ -512,7 +512,7 @@ public class HttpChat extends BaseTask {
         try {
             //登录成功后，需要启动消息轮询机制
             Looper.prepare();
-            loginurl = String.format("%1$sgroup/kickOut", AppConfig.IMUrl);
+            loginurl = String.format("%1$sgroup/kickOut", "");
             Log.i("url", "");
             m_httpClient.openRequest(loginurl, AjaxHttp.REQ_METHOD_POST);
             m_httpClient.setEntity(getPostData());
@@ -569,7 +569,7 @@ public class HttpChat extends BaseTask {
         try {
             //登录成功后，需要启动消息轮询机制
             Looper.prepare();
-            loginurl = String.format("%1$sgroup/pullIn", AppConfig.IMUrl);
+            loginurl = String.format("%1$sgroup/pullIn", "");
             Log.i("url", "");
             m_httpClient.openRequest(loginurl, AjaxHttp.REQ_METHOD_POST);
             m_httpClient.setEntity(getPostData());
@@ -625,7 +625,7 @@ public class HttpChat extends BaseTask {
         try {
             //登录成功后，需要启动消息轮询机制
             Looper.prepare();
-            loginurl = String.format("%1$sgroup/signOut", AppConfig.IMUrl);
+            loginurl = String.format("%1$sgroup/signOut", "");
             Log.i("url", "");
             m_httpClient.openRequest(loginurl, AjaxHttp.REQ_METHOD_POST);
             m_httpClient.setEntity(getPostData());
@@ -679,7 +679,7 @@ public class HttpChat extends BaseTask {
         try {
             //登录成功后，需要启动消息轮询机制
             Looper.prepare();
-            loginurl = String.format("%1$sconfig/query", AppConfig.IMUrl);
+            loginurl = String.format("%1$sconfig/query", AppConfig.cHost);
             Log.i("url", "");
             m_httpClient.openRequest(loginurl, AjaxHttp.REQ_METHOD_POST);
             m_httpClient.setEntity(getPostData());
@@ -733,7 +733,7 @@ public class HttpChat extends BaseTask {
         try {
             //登录成功后，需要启动消息轮询机制
             Looper.prepare();
-            loginurl = String.format("%1$sconfig/disturb/set", AppConfig.IMUrl);
+            loginurl = String.format("%1$sconfig/disturb/set", AppConfig.cHost);
             Log.i("url", "");
             m_httpClient.openRequest(loginurl, AjaxHttp.REQ_METHOD_POST);
             m_httpClient.setEntity(getPostData());
@@ -787,7 +787,7 @@ public class HttpChat extends BaseTask {
         try {
             //登录成功后，需要启动消息轮询机制
             Looper.prepare();
-            loginurl = String.format("%1$sconfig/top/set", AppConfig.IMUrl);
+            loginurl = String.format("%1$sconfig/top/set", AppConfig.cHost);
             Log.i("url", "");
             m_httpClient.openRequest(loginurl, AjaxHttp.REQ_METHOD_POST);
             m_httpClient.setEntity(getPostData());

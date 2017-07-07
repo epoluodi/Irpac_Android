@@ -120,8 +120,9 @@ public class AppContextLauncher {
                         @Override
                         public void onClick(View v) {
                             alertDlg.dismiss();
+                            AppConfig appConfig=new AppConfig();
                             AppUpdate appUpdate = new AppUpdate(iUpdateResult);
-                            appUpdate.downloadAPK(AppConfig.AppUpgrade + "download");
+                            appUpdate.downloadAPK(appConfig.AppUpgrade + "download");
                             Toast.makeText(APP.getApp(), "正在更新，请稍等", Toast.LENGTH_SHORT).show();
                             return;
                         }

@@ -75,9 +75,9 @@ public class HttpMobile extends BaseTask {
     public void checkUser() {
         String loginurl;
         try {
-
+            AppConfig appConfig=new AppConfig();
             Looper.prepare();
-            loginurl = String.format("%1$scare/eHealth/checkUserEquip", AppConfig.MobileUrl);
+            loginurl = String.format("%1$scare/eHealth/checkUserEquip", appConfig.MobileUrl);
             m_httpClient.openRequest(loginurl, AjaxHttp.REQ_METHOD_POST);
             m_httpClient.setPostValuesForKey("userId", userId);
             m_httpClient.setEntity(m_httpClient.getPostData());
@@ -133,7 +133,7 @@ public class HttpMobile extends BaseTask {
         try {
 
             Looper.prepare();
-            loginurl = String.format("%1$scare/eHealth/uploadVoice?mediaId=%2$s", AppConfig.MobileUrl, mediaid);
+            loginurl = String.format("%1$scare/eHealth/uploadVoice?mediaId=%2$s", AppConfig.cHost, mediaid);
             m_httpClient.openRequest(loginurl, AjaxHttp.REQ_METHOD_POST);
             m_httpClient.setPostValuesForKey("userId", userId);
             m_httpClient.setEntity(m_httpClient.getPostData());

@@ -12,6 +12,7 @@ import com.suypower.stereo.suypowerview.File.FileDownload;
 import com.suypower.stereo.suypowerview.File.FileUpLoad;
 import com.suypower.stereo.suypowerview.ServerReturnData.ReturnData;
 
+import org.apache.cordova.App;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -125,8 +126,8 @@ public class HttpFile extends BaseTask {
 
 
         System.gc();
-
-        String url = String.format("%1$smedia/upload", AppConfig.AppUrl);
+        AppConfig appConfig=new AppConfig();
+        String url = String.format("%1$smedia/upload", appConfig.AppUrl);
 //        String url = "http://192.168.0.196:8080/Cloudx/app/media/upload";
         FileUpLoad fileUpLoad = new FileUpLoad(url, filetype, mediaid, uploadtype, subtype);
         String result = fileUpLoad.uploadfile();
@@ -175,8 +176,8 @@ public class HttpFile extends BaseTask {
      */
     public void multiUploadfile() {
 
-
-        final  String url = String.format("%1$supload", AppConfig.AppUrl);
+        AppConfig appConfig=new AppConfig();
+        final  String url = String.format("%1$supload", appConfig.AppUrl);
 //        final String url = "http://192.168.0.196:8080/Cloudx/app/media/upload";
         for (int i=0;i<fileids.length;i++)
         {
@@ -220,12 +221,12 @@ public class HttpFile extends BaseTask {
 
 
     public void downloadfile() {
-
+        AppConfig appConfig=new AppConfig();
         Message message = handler.obtainMessage();
         try {
             if (mediaid == null || mediaid.equals(""))
                 throw new Exception("下载错误");
-        String url = String.format("%1$smedia/download", AppConfig.AppUrl);
+        String url = String.format("%1$smedia/download", appConfig.AppUrl);
 
 //            String url = "http://192.168.0.196:8080/Cloudx/app/media/download";
 

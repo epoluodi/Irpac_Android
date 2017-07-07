@@ -16,19 +16,20 @@ public class AppConfig {
 
 //    public static final String host = "http://192.168.0.77:8080/Cloudx";// DK
 
-    public static final String host = "http://120.26.101.38:8081/riskControl/app";// 开发 120.26.101.38:8081
-    public static String host2 = "http://120.26.101.38:8081/riskControl";// 正式
+    public static final String host = "http://app.njhd.com.cn/riskControl/app";// 开发 120.26.101.38:8081
+    public static String host2 = "http://app.njhd.com.cn/riskControl";// 正式
 
+    public static String cHost = "";
     //    public static final String host = getHostForSD();
-    public static final String QRHhost = "";//二维码host
-    public static final String AuthUrl = host + "/sysItf/";
-    public static final String AppUrl = host + "/sysItf/";
-    public static final String IMUrl = host + "/sysItf/";
+    public   String QRHhost = "";//二维码host
+    public   String AuthUrl = cHost + "/riskControl/app/sysItf/";
+    public   String AppUrl = cHost + "/riskControl/app/sysItf/";
+    public static   String IMUrl = cHost + "/riskControl/app/sysItf/";
     //    public static final String MQTTServer = "tcp://218.94.111.38:61613";
-    public static final String ApiUrl = host + "/sysItf/";
-    public static final String AppUpgrade = host + "/sysItf/";
-    public static final String ArticleUrl = host + "/sysItf/";
-    public static final String MobileUrl = host + "/sysItf/";
+    public static final String ApiUrl = cHost + "/riskControl/app/sysItf/";
+    public   String AppUpgrade = cHost + "/riskControl/app/sysItf/";
+    public static final String ArticleUrl = cHost + "/riskControl/app/sysItf/";
+    public   String MobileUrl = cHost + "/riskControl/app/sysItf/";
 
     public static final String APP_CACHE_HOME = APP.getApp().getCacheDir().getAbsolutePath();
 
@@ -38,9 +39,9 @@ public class AppConfig {
 
 
     //标签页
-    public static String Tab1Url1 = host2 + "/mobile/html/home/index.html";
-    public static String Tab1Url2 = host2 + "/mobile/html/notice/index.html";
-    public static String Tab1Url3 = host2 + "/mobile/html/mine/index.html";
+    public  String Tab1Url1 = cHost + "/riskControl/mobile/html/home/index.html";
+    public  String Tab1Url2 = cHost + "/riskControl/mobile/html/notice/index.html";
+    public  String Tab1Url3 = cHost + "/riskControl/mobile/html/mine/index.html";
 
 
 

@@ -91,7 +91,9 @@ public class HttpRequestTask {
      */
     protected  void  postHttpRequest(Map<String,Object> params) throws Exception {
         /**拼接URL*/
-        String url = String.format("%1$s%2$s", AppConfig.AppUrl, m_method);
+        AppConfig appConfig=new AppConfig();
+
+        String url = String.format("%1$s%2$s", appConfig.AppUrl, m_method);
 
         m_httpClient.openRequest(url, AjaxHttp.REQ_METHOD_POST);
 
@@ -122,7 +124,8 @@ public class HttpRequestTask {
      */
     protected  void  downFileRequest(Map<String,Object> params) throws Exception {
         /**拼接URL*/
-        String url = String.format("%1$s%2$s", AppConfig.AppUrl, m_method);
+        AppConfig appConfig=new AppConfig();
+        String url = String.format("%1$s%2$s", appConfig.AppUrl, m_method);
         params.put("url",url);
         FileDownload fileDownLoad = new FileDownload(params);
         Boolean result = fileDownLoad.streamDownLoadFile();
@@ -136,7 +139,8 @@ public class HttpRequestTask {
      */
     protected  void  upLoadFileRequest(Map<String,Object> params) throws Exception {
         /**拼接URL*/
-        String url = String.format("%1$s%2$s", AppConfig.AppUrl, m_method);
+        AppConfig appConfig=new AppConfig();
+        String url = String.format("%1$s%2$s", appConfig.AppUrl, m_method);
         String mediaType = params.get("mediaType").toString();
         String imageType = params.get("imageType").toString();
         FileUpLoad fileUpLoad = new FileUpLoad(url, mediaType, imageType);

@@ -371,12 +371,13 @@ public class MainActivity extends AppCompatActivity implements CordovaInterface 
      */
     void intFragment() {
         //AppConfig.Tab1Url1;
+        AppConfig appConfig=new AppConfig();
         infocdvWebviewfragment = new CDVWebviewfragment(0);
-        infocdvWebviewfragment.HostUrl = AppConfig.Tab1Url1;//"file:///android_asset/www/apps/pms/html/index.html";// AppConfig.Tab1Url1;
+        infocdvWebviewfragment.HostUrl = appConfig.Tab1Url1;//"file:///android_asset/www/apps/pms/html/index.html";// AppConfig.Tab1Url1;
         groupcdvWebviewfragment = new CDVWebviewfragment(2);
-        groupcdvWebviewfragment.HostUrl = AppConfig.Tab1Url2;
+        groupcdvWebviewfragment.HostUrl = appConfig.Tab1Url2;
         mecdvWebviewfragment=new CDVWebviewfragment(3);
-        mecdvWebviewfragment.HostUrl = AppConfig.Tab1Url3;
+        mecdvWebviewfragment.HostUrl = appConfig.Tab1Url3;
     }
 
 

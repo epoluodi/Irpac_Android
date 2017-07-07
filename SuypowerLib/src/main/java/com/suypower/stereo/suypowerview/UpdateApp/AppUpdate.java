@@ -54,7 +54,7 @@ public class AppUpdate {
                 down.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE);
                 down.setVisibleInDownloadsUi(true);
                 down.setDestinationInExternalFilesDir(Init.getContext(),
-                        Environment.DIRECTORY_DOWNLOADS, "suehome.apk");
+                        Environment.DIRECTORY_DOWNLOADS, "Irpac.apk");
                 downloadManager.enqueue(down);
 
                 return downloadManager;

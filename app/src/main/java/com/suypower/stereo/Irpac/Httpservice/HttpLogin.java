@@ -70,13 +70,13 @@ public class HttpLogin extends BaseTask {
 
 
     void login() {
-
+        AppConfig appConfig=new AppConfig();
         String loginurl;
         try {
             //登录成功后，需要启动消息轮询机制
             Looper.prepare();
 
-            loginurl = String.format("%1$sgetToken?userName=%2$s&pwd=%3$s&token=%4$s", AppConfig.AuthUrl,
+            loginurl = String.format("%1$sgetToken?userName=%2$s&pwd=%3$s&token=%4$s", appConfig.AuthUrl,
                     UserInfo.getUserInfo().getLginname(), UserInfo.getUserInfo().getUserpwd(), Common.Token);
 
 

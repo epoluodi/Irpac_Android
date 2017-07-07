@@ -18,6 +18,7 @@ import com.suypower.stereo.suypowerview.Http.AjaxHttp;
 import com.suypower.stereo.suypowerview.MQTT.MQTTConfig;
 import com.suypower.stereo.suypowerview.ServerReturnData.ReturnData;
 
+import org.apache.cordova.App;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.message.BasicNameValuePair;
@@ -158,7 +159,9 @@ public class HttpUserInfo extends BaseTask {
         try {
             //登录成功后，需要启动消息轮询机制
             Looper.prepare();
-            loginurl = String.format("%1$sgetUserDetail", AppConfig.AppUrl);
+            AppConfig appConfig=new AppConfig();
+
+            loginurl = String.format("%1$sgetUserDetail", appConfig.AppUrl);
 
 
             Log.i("url", "");
@@ -236,7 +239,8 @@ public class HttpUserInfo extends BaseTask {
         try {
             //登录成功后，需要启动消息轮询机制
             Looper.prepare();
-            loginurl = String.format("%1$sperson/update", AppConfig.AppUrl);
+            AppConfig appConfig=new AppConfig();
+            loginurl = String.format("%1$sperson/update", appConfig.AppUrl);
             Log.i("url", "");
             m_httpClient.openRequest(loginurl, AjaxHttp.REQ_METHOD_POST);
             m_httpClient.setEntity(getPostData());
@@ -483,7 +487,7 @@ public class HttpUserInfo extends BaseTask {
         try {
             //登录成功后，需要启动消息轮询机制
             Looper.prepare();
-            loginurl = String.format("%1$sperson/info", AppConfig.AppUrl);
+            loginurl = String.format("%1$sperson/info", AppConfig.cHost);
             Log.i("url", "");
             m_httpClient.openRequest(loginurl, AjaxHttp.REQ_METHOD_POST);
             m_httpClient.setEntity(getPostData());
@@ -721,7 +725,7 @@ public class HttpUserInfo extends BaseTask {
         try {
             //登录成功后，需要启动消息轮询机制
             Looper.prepare();
-            loginurl = String.format("%1$sperson/families", AppConfig.AppUrl);
+            loginurl = String.format("%1$sperson/families", AppConfig.cHost);
             Log.i("url", "");
             m_httpClient.openRequest(loginurl, AjaxHttp.REQ_METHOD_POST);
             m_httpClient.setEntity(getPostData());
@@ -812,7 +816,7 @@ public class HttpUserInfo extends BaseTask {
         try {
             //登录成功后，需要启动消息轮询机制
             Looper.prepare();
-            loginurl = String.format("%1$swelpage/get", AppConfig.AppUrl);
+            loginurl = String.format("%1$swelpage/get", AppConfig.cHost);
             Log.i("url", "");
             m_httpClient.openRequest(loginurl, AjaxHttp.REQ_METHOD_POST);
             Message message = handler.obtainMessage();

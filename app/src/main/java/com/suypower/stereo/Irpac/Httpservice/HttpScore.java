@@ -67,7 +67,7 @@ public class HttpScore extends BaseTask {
         try {
 
             Looper.prepare();
-            loginurl = String.format("%1$sscore/statisticsDailyTasks", AppConfig.AppUrl);
+            loginurl = String.format("%1$sscore/statisticsDailyTasks", AppConfig.cHost);
             m_httpClient.openRequest(loginurl, AjaxHttp.REQ_METHOD_POST);
             Message message = handler.obtainMessage();
             if (!m_httpClient.sendRequest()) {

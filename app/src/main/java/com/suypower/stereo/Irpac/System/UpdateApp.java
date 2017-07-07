@@ -20,6 +20,7 @@ import com.suypower.stereo.suypowerview.Base.LibConfig;
 import com.suypower.stereo.suypowerview.Http.AjaxHttp;
 import com.suypower.stereo.suypowerview.ServerReturnData.ReturnData;
 
+import org.apache.cordova.App;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.json.JSONArray;
@@ -39,7 +40,7 @@ import java.net.HttpURLConnection;
 public class UpdateApp {
 
 
-    public static final String UPDATEURL = AppConfig.AppUpgrade + "android/download";
+//    public static final String UPDATEURL = AppConfig.AppUpgrade + "android/download";
     static final String DOWNLOADAPKURL = "";
     private String ver;
     private int vercode;
@@ -80,8 +81,10 @@ public class UpdateApp {
 
     public Boolean CheckVerison() {
 
-        String checkUrl = String.format("%1$sgetNewVersion?type=1",
-                AppConfig.AppUpgrade);
+        AppConfig appConfig=new AppConfig();
+
+        String checkUrl = String.format("%1$slastVersionNum?deviceType=2",
+                appConfig.AppUpgrade);
 
         ajaxHttp.openRequest(checkUrl, AjaxHttp.REQ_METHOD_GET);
         if (!ajaxHttp.sendRequest())//发送请求
@@ -102,7 +105,7 @@ public class UpdateApp {
             if (returnData.getReturnCode() != 0) {
                 return false;
             }
-            NewVer = returnData.getReturnData().getString("versionNo");
+//            NewVer = returnData.getReturnData().getString("versionNo");
             int _vercode = Integer.valueOf(returnData.getReturnData().getString("versionNum"));
             if (vercode < _vercode) {
                 data = returnData.getReturnData();

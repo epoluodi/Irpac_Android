@@ -71,7 +71,7 @@ public class LoginActivity extends AppCompatActivity {
         btnreturn = (ImageView) findViewById(R.id.btnreturn);
         btnreturn.setOnClickListener(onClickListenerreturn);
         stImageView = (STImageView) findViewById(R.id.nickimg);
-        backview = (RelativeLayout)findViewById(R.id.backview);
+        backview = (RelativeLayout) findViewById(R.id.backview);
 
         stImageView.setmRadius(16);
         stImageView.setmIsCircle(false);
@@ -112,7 +112,10 @@ public class LoginActivity extends AppCompatActivity {
 //            }
 //        });
         edituserpwd = (EditText) findViewById(R.id.edituserpwd);
-//        serverHost = (EditText) findViewById(R.id.serverHost);
+        serverHost = (EditText) findViewById(R.id.editserver);
+        serverHost.setText(LibConfig.getKeyShareVarForString("serverUrl"));
+
+
 //        clear1 = (ImageView) findViewById(R.id.btnclear1);
 //        clear2 = (ImageView) findViewById(R.id.btnclear2);
 //        clear1.setOnClickListener(onClickListenerclear);
@@ -151,15 +154,15 @@ public class LoginActivity extends AppCompatActivity {
         /**
          * 更新检查
          */
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                updateApp = new UpdateApp();
-                boolean r = updateApp.CheckVerison();
-                if (r)
-                    handler.sendEmptyMessage(0);
-            }
-        }).start();
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                updateApp = new UpdateApp();
+//                boolean r = updateApp.CheckVerison();
+//                if (r)
+//                    handler.sendEmptyMessage(0);
+//            }
+//        }).start();
 
 
     }
@@ -169,6 +172,7 @@ public class LoginActivity extends AppCompatActivity {
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
 
+            final AppConfig appConfig=new AppConfig();
             switch (msg.what) {
                 case 0://更新
 
@@ -190,13 +194,12 @@ public class LoginActivity extends AppCompatActivity {
                             alertDlg.dismiss();
                             btnlogin.setEnabled(false);
                             AppUpdate appUpdate = new AppUpdate(iUpdateResult);
-                            appUpdate.downloadAPK(AppConfig.AppUpgrade + "download");
+                            appUpdate.downloadAPK(appConfig.AppUpgrade + "download");
                             Toast.makeText(APP.getApp(), "正在更新，请稍等", Toast.LENGTH_SHORT).show();
                             return;
                         }
                     });
                     alertDlg.show();
-
 
 
 //                    if (Common.IsWifi(APP.getApp())) {
@@ -237,19 +240,13 @@ public class LoginActivity extends AppCompatActivity {
     };
 
 
-
-
-
-
-
-
     /**
      * md5加密
      *
      * @param str
      * @return
      */
-    public  String md5(String str) {
+    public String md5(String str) {
         try {
             MessageDigest md = MessageDigest.getInstance("MD5");
             md.update(str.getBytes());
@@ -280,6 +277,13 @@ public class LoginActivity extends AppCompatActivity {
     View.OnClickListener onClickListenerlogin = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+
+            if (!serverHost.getText().toString().equals(""))
+            {
+                LibConfig.setKeyShareVar("serverUrl",serverHost.getText().toString());
+            }
+
+            AppConfig.cHost = String.format("http://%1$s",serverHost.getText().toString());
             if (editusername.getText().toString().trim().equals("") ||
                     edituserpwd.getText().toString().trim().equals("")) {
                 Toast.makeText(LoginActivity.this, "请输入用户名或密码", Toast.LENGTH_SHORT).show();
@@ -289,7 +293,6 @@ public class LoginActivity extends AppCompatActivity {
             CustomPopWindowPlugin.ShowPopWindow(btnlogin, getLayoutInflater(), "登录...");
             UserInfo.Init(editusername.getText().toString().trim(),
                     md5(edituserpwd.getText().toString().trim()));
-
 
 
             btnlogin.setEnabled(false);
@@ -319,7 +322,7 @@ public class LoginActivity extends AppCompatActivity {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
-
+            final AppConfig appConfig=new AppConfig();
             switch (msg.what) {
                 case 0://更新
 
@@ -340,13 +343,12 @@ public class LoginActivity extends AppCompatActivity {
                         public void onClick(View v) {
                             alertDlg.dismiss();
                             AppUpdate appUpdate = new AppUpdate(iUpdateResult);
-                            appUpdate.downloadAPK(AppConfig.AppUpgrade + "download");
+                            appUpdate.downloadAPK(appConfig.AppUpgrade + "download");
                             Toast.makeText(APP.getApp(), "正在更新，请稍等", Toast.LENGTH_SHORT).show();
                             return;
                         }
                     });
                     alertDlg.show();
-
 
 
 //                    if (Common.IsWifi(APP.getApp())) {
@@ -359,7 +361,7 @@ public class LoginActivity extends AppCompatActivity {
                     break;
                 case 1://登录
                     HttpLogin httpLogin = new HttpLogin(interfaceTask);
-                    httpLogin.isToken=false;
+                    httpLogin.isToken = false;
                     httpLogin.startTask();
                     break;
             }
@@ -400,10 +402,6 @@ public class LoginActivity extends AppCompatActivity {
                     }
                 }
             }
-
-
-
-
 
 
         }
