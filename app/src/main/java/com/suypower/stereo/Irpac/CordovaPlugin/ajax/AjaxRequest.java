@@ -37,7 +37,7 @@ public class AjaxRequest extends CordovaPlugin {
 
         jsonObject = args.getJSONObject(0);
         Log.i("开始转发URL", jsonObject.toString());
-        url = AppConfig.host + jsonObject.getString("url");
+        url = AppConfig.cHost+"/riskControl/app" + jsonObject.getString("url");
         dataType = jsonObject.getString("dataType");
         paramjson = null;
 

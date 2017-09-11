@@ -1,12 +1,14 @@
 package com.suypower.stereo.Irpac.Activity;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -55,9 +57,9 @@ public class LoginActivity extends AppCompatActivity {
 
 
     private ImageView btnreturn;
-    private TextView title, t1, t2;
+    private TextView title, addrconfig, t2;
     private Button btnlogin;
-    private EditText editusername, edituserpwd, serverHost;
+    private EditText editusername, edituserpwd;
     //    private ImageView clear1, clear2;
     private STImageView stImageView;
     private UpdateApp updateApp;
@@ -78,7 +80,38 @@ public class LoginActivity extends AppCompatActivity {
         stImageView.reDraw();
         stImageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
         title = (TextView) findViewById(R.id.title);
-//        t1 = (TextView) findViewById(R.id.t1);
+        addrconfig = (TextView) findViewById(R.id.txtaddr);
+
+        addrconfig.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                builder.setTitle("服务器设置");
+                final EditText serverHost = new EditText(LoginActivity.this);
+                serverHost.setText(LibConfig.getKeyShareVarForString("serverUrl"));
+                builder.setView(serverHost);
+                builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        if (serverHost.getText().toString().equals("")) {
+
+                            dialog.dismiss();
+                            return;
+                        }
+                        LibConfig.setKeyShareVar("serverUrl", serverHost.getText().toString());
+                        AppConfig.cHost = String.format("http://%1$s", serverHost.getText().toString());
+
+
+                        dialog.dismiss();
+                    }
+                });
+                builder.setNegativeButton("取消", null);
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
+
+            }
+        });
 //        t2 = (TextView) findViewById(R.id.t2);
         btnlogin = (Button) findViewById(R.id.btnlogin);
         btnlogin.setOnClickListener(onClickListenerlogin);
@@ -112,8 +145,6 @@ public class LoginActivity extends AppCompatActivity {
 //            }
 //        });
         edituserpwd = (EditText) findViewById(R.id.edituserpwd);
-        serverHost = (EditText) findViewById(R.id.editserver);
-        serverHost.setText(LibConfig.getKeyShareVarForString("serverUrl"));
 
 
 //        clear1 = (ImageView) findViewById(R.id.btnclear1);
@@ -172,7 +203,7 @@ public class LoginActivity extends AppCompatActivity {
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
 
-            final AppConfig appConfig=new AppConfig();
+            final AppConfig appConfig = new AppConfig();
             switch (msg.what) {
                 case 0://更新
 
@@ -278,12 +309,12 @@ public class LoginActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
 
-            if (!serverHost.getText().toString().equals(""))
+            if (LibConfig.getKeyShareVarForString("serverUrl").equals(""))
             {
-                LibConfig.setKeyShareVar("serverUrl",serverHost.getText().toString());
+                Toast.makeText(LoginActivity.this, "请设置服务器地址", Toast.LENGTH_SHORT).show();
+                return;
             }
-
-            AppConfig.cHost = String.format("http://%1$s",serverHost.getText().toString());
+            AppConfig.cHost = String.format("http://%1$s", LibConfig.getKeyShareVarForString("serverUrl"));
             if (editusername.getText().toString().trim().equals("") ||
                     edituserpwd.getText().toString().trim().equals("")) {
                 Toast.makeText(LoginActivity.this, "请输入用户名或密码", Toast.LENGTH_SHORT).show();
@@ -322,7 +353,7 @@ public class LoginActivity extends AppCompatActivity {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
-            final AppConfig appConfig=new AppConfig();
+            final AppConfig appConfig = new AppConfig();
             switch (msg.what) {
                 case 0://更新
 

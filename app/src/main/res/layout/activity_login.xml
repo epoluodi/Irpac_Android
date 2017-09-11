@@ -50,51 +50,7 @@
         android:src="@mipmap/appico2" />
 
 
-    <FrameLayout
 
-        android:id="@+id/serverUrl"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/nickimg"
-        android:layout_marginTop="20dp">
-
-        <EditText
-            android:id="@+id/editserver"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@drawable/editbackimg"
-            android:gravity="center_horizontal|center_vertical"
-            android:hint="服务器地址"
-            android:lines="1"
-            android:maxLength="18"
-            android:imeOptions="actionNone"
-            android:inputType="textPersonName"
-
-            android:textColor="@color/gray"
-            android:textColorHint="@color/blackTransparent4"
-            android:textSize="16dp" />
-
-        <!--<TextView-->
-        <!--android:id="@+id/t1"-->
-        <!--android:layout_width="80dp"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_gravity="center_vertical"-->
-        <!--android:layout_marginLeft="5dp"-->
-        <!--android:text="手机号:"-->
-        <!--android:textAlignment="textEnd"-->
-        <!--android:textColor="@color/black"-->
-        <!--android:textSize="16dp" />-->
-
-        <!--<ImageView-->
-        <!--android:id="@+id/btnclear1"-->
-        <!--android:layout_width="15dp"-->
-        <!--android:layout_height="15dp"-->
-        <!--android:layout_gravity="center_vertical|right"-->
-        <!--android:layout_marginRight="10dp"-->
-        <!--android:background="@drawable/bar_input_clear_selector3"-->
-
-        <!--android:clickable="true" />-->
-    </FrameLayout>
 
 
     <FrameLayout
@@ -102,7 +58,7 @@
         android:id="@+id/fusername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/serverUrl"
+        android:layout_below="@+id/nickimg"
         android:layout_marginTop="20dp">
 
         <EditText
@@ -111,7 +67,7 @@
             android:layout_height="50dp"
             android:background="@drawable/editbackimg"
             android:gravity="center_horizontal|center_vertical"
-            android:hint="用户名/手机号"
+            android:hint="请输入登录账号或工号"
             android:lines="1"
             android:maxLength="18"
             android:imeOptions="actionNone"
@@ -175,19 +131,7 @@
     <!--android:textSize="16dp" />-->
     <!--</FrameLayout>-->
 
-    <Button
-        android:id="@+id/btnlogin"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_below="@+id/fpwd"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="35dp"
-        android:background="@drawable/button_style_login"
-        android:clickable="true"
-        android:text="登  录"
-        android:textColor="@color/white"
-        android:textSize="16dp" />
+
 
     <FrameLayout
         android:id="@+id/fpwd"
@@ -233,6 +177,36 @@
             <!--android:clickable="true" />-->
     </FrameLayout>
 
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/fpwd"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button_style_login"
+        android:clickable="true"
+        android:text="登  录"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="服务器设置"
+        android:id="@+id/txtaddr"
+        android:layout_below="@+id/btnlogin"
+        android:layout_marginTop="8dp"
+        android:layout_alignRight="@+id/btnlogin"
+        android:textSize="15dp"
+        android:textColor="@drawable/addr_bar_text_color"
+        android:visibility="visible"
+        />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -242,6 +216,7 @@
         android:layout_marginBottom="10dp"
         android:textAlignment="center"
         android:textSize="12dp"
+
         />
 
 
