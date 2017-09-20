@@ -175,6 +175,9 @@ public class CDVWebviewfragment extends Fragment implements FragmentName {
         webtitle.setText("");
         switch (viewid)
         {
+            case 1:
+                webtitle.setText("甦廉");
+                break;
             case 2:
                 webtitle.setText("通知");
                 break;

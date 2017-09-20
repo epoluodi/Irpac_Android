@@ -45,9 +45,9 @@
         android:layout_below="@+id/headview"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:scaleType="centerCrop"
+        android:scaleType="center"
 
-        android:src="@mipmap/appico2" />
+        android:src="@mipmap/appico4_2" />
 
 
 

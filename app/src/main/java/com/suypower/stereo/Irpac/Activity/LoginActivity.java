@@ -152,23 +152,23 @@ public class LoginActivity extends AppCompatActivity {
 //        clear1.setOnClickListener(onClickListenerclear);
 //        clear2.setOnClickListener(onClickListenerclear);
 
-        if (!LibConfig.getKeyShareVarForString("username").equals("null")) {
-            editusername.setText(LibConfig.getKeyShareVarForString("username"));
-            String nickimgid = LibConfig.getKeyShareVarForString(LibConfig.getKeyShareVarForString("username"));
-            if (!nickimgid.equals("null")) {
-                if (Common.checkCacheIsExits(nickimgid, ".jpg")) {
-                    Bitmap bitmap = BitmapFactory.decodeFile(getCacheDir()
-                            + File.separator + nickimgid + ".jpg");
-                    if (bitmap != null) {
-                        stImageView.setImageBitmap(bitmap);
-                        stImageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
-                    } else
-                        stImageView.setImageDrawable(getResources().getDrawable(R.mipmap.default_user));
-                }
-            } else
-                stImageView.setImageDrawable(getResources().getDrawable(R.mipmap.default_user));
-            edituserpwd.requestFocus();
-        }
+//        if (!LibConfig.getKeyShareVarForString("username").equals("null")) {
+//            editusername.setText(LibConfig.getKeyShareVarForString("username"));
+//            String nickimgid = LibConfig.getKeyShareVarForString(LibConfig.getKeyShareVarForString("username"));
+//            if (!nickimgid.equals("null")) {
+//                if (Common.checkCacheIsExits(nickimgid, ".jpg")) {
+//                    Bitmap bitmap = BitmapFactory.decodeFile(getCacheDir()
+//                            + File.separator + nickimgid + ".jpg");
+//                    if (bitmap != null) {
+//                        stImageView.setImageBitmap(bitmap);
+//                        stImageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+//                    } else
+//                        stImageView.setImageDrawable(getResources().getDrawable(R.mipmap.default_user));
+//                }
+//            } else
+//                stImageView.setImageDrawable(getResources().getDrawable(R.mipmap.default_user));
+//            edituserpwd.requestFocus();
+//        }
 
 
         backview.setOnClickListener(new View.OnClickListener() {
