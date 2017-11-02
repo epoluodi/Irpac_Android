@@ -16,6 +16,8 @@ import com.suypower.stereo.suypowerview.PopWindowInfo.CustomPopWindowPlugin;
 
 import org.apache.cordova.App;
 
+import java.io.File;
+
 public class SplashActivity extends AppCompatActivity {
 
     public static final String ACTION_ADD_SHORTCUT = "com.android.launcher.action.INSTALL_SHORTCUT";
@@ -29,19 +31,25 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 //        addShortcut("廉洁从医");
         AppConfig.cHost = String.format("http://%1$s",LibConfig.getKeyShareVarForString("serverUrl"));
-//        imageView = (ImageView) findViewById(R.id.backimg);
+        imageView = (ImageView) findViewById(R.id.backimg);
 //
 //
-//        String imgid = LibConfig.getKeyShareVarForString("splashimg");
-//        if (!imgid.equals("null")) {
-//
-//            BitmapDrawable bitmapDrawable = (BitmapDrawable) BitmapDrawable.createFromPath(getCacheDir() + "/" + imgid + ".jpg");
-//            if (bitmapDrawable == null)
-//                imageView.setBackground(getResources().getDrawable(R.mipmap.splashold));
+        String imgid = LibConfig.getKeyShareVarForString("splashimg");
+        if (!imgid.equals("null") && !imgid.equals("")) {
+
+            File file=new File(getCacheDir() + "/" + imgid + ".jpg");
+            if (file.exists()) {
+                BitmapDrawable bitmapDrawable = (BitmapDrawable) BitmapDrawable.createFromPath(getCacheDir() + "/" + imgid + ".jpg");
+                if (bitmapDrawable == null)
+                    imageView.setBackground(getResources().getDrawable(R.mipmap.welcome));
+                else
+                    imageView.setBackground(bitmapDrawable);
+            }
 //            else
-//                imageView.setBackground(bitmapDrawable);
-//        } else
-//            imageView.setBackground(getResources().getDrawable(R.mipmap.splashold));
+//                imageView.setBackground(getResources().getDrawable(R.mipmap.welcome3));
+        }
+//        else
+//            imageView.setBackground(getResources().getDrawable(R.mipmap.welcome3));
 
 
 

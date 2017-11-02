@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">甦廉</string>
+    <!--<string name="app_name">甦廉</string>-->
+    <string name="app_name">廉洁从医</string>
 </resources>

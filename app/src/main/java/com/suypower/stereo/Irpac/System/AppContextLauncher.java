@@ -171,7 +171,8 @@ public class AppContextLauncher {
 
                     HttpUserInfo httpUserInfo = new HttpUserInfo(interfaceTask, HttpUserInfo.GETBASEUSERINFO);
                     httpUserInfo.startTask();
-
+                    httpUserInfo = new HttpUserInfo(interfaceTask, HttpUserInfo.DOWNLOADWLIMG);
+                    httpUserInfo.startTask();
                 }
                 return;
             }

@@ -816,7 +816,8 @@ public class HttpUserInfo extends BaseTask {
         try {
             //登录成功后，需要启动消息轮询机制
             Looper.prepare();
-            loginurl = String.format("%1$swelpage/get", AppConfig.cHost);
+            AppConfig appConfig=new AppConfig();
+            loginurl = String.format("%1$sgetWelcomePage", appConfig.AppUrl);
             Log.i("url", "");
             m_httpClient.openRequest(loginurl, AjaxHttp.REQ_METHOD_POST);
             Message message = handler.obtainMessage();
@@ -841,7 +842,7 @@ public class HttpUserInfo extends BaseTask {
                 }
 
                 String imgid = returnData.getReturnData().getString("pageId");
-                String url = returnData.getReturnData().getString("uri");
+                String url = returnData.getReturnData().getString("pageUrl");
                 String oldimgid = LibConfig.getKeyShareVarForString("splashimg");
                 if (!imgid.equals(oldimgid)) {
                     LibConfig.setKeyShareVar("splashimg", imgid);
@@ -853,6 +854,7 @@ public class HttpUserInfo extends BaseTask {
 
             } catch (Exception e) {
                 e.printStackTrace();
+                LibConfig.setKeyShareVar("splashimg", "null");
                 throw new Exception("网络异常");
             }
 

@@ -47,7 +47,7 @@
         android:layout_marginTop="30dp"
         android:scaleType="center"
 
-        android:src="@mipmap/appico4_2" />
+        android:src="@mipmap/appico2" />
 
 
 
